@@ -19,14 +19,14 @@ _Binder serves interactive notebooks online, so you can run the code and change 
 
 ### Dataset Exploration
 
-1. [German Traffic Sign Datasets](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset) is used to train and test the nerual network. There are $34799$ sample images in the training set, and $12630$ images in the testing set, which covers a total of $43$ different German traffic signs. For each of the example image, the dimension is $32\times32\times3$.
+1. [German Traffic Sign Datasets](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset) is used to train and test the nerual network. There are 34799 sample images in the training set, and 12630 images in the testing set, which covers a total of $43$ different German traffic signs. For each of the example image, the dimension is 32x32x3.
 
-2. An example image of each of the $43$ traffic signs are displayed in below for visual inspection.  
+2. An example image of each of the 43 traffic signs are displayed in below for visual inspection.  
    <img src="./examples/all_signs.jpg" alt="all" width="600">
 
 3. A data distribution has been checked for the training set in below. This provides how the different traffic signs are covered.  
    <img src="./examples/train_dist.jpg" alt="dist" width="600">  
-   As illustrated, some traffic signs, such as Class $0, 19, 37$, are having relatively smaller example image for model training. This may affect the recall rate for the model in testing.
+   As illustrated, some traffic signs, such as Class 0, 19, 37, are having relatively smaller example image for model training. This may affect the recall rate for the model in testing.
 
 ### Design and Test a Model Architecture
 
@@ -37,15 +37,15 @@ _Binder serves interactive notebooks online, so you can run the code and change 
 
 2. The network model is based on  [LeNet-5](http://yann.lecun.com/exdb/lenet/) CNN with some modifications.  
    <img src="./examples/LeNet-5.png" alt="lenet" width="600">  
-   - the output predictions have $43$ classes
+   - the output predictions have 43 classes
    - dropout has been applied to the output of the two fully connected layers
    - first two convolutional layer outputs are extracted for visual inspection
 
-3. The LeNet-5 used has $5$ layers including the output layer. The first two layers are convolutional layers, and ReLu function is used as the activation function. Max pooling also applied to the layer outputs to improve model performance. The third and fourth layers are fully connected layers, and dropout has been applied to the output to reduce the model over fitting on the training data.
+3. The LeNet-5 used has 5 layers including the output layer. The first two layers are convolutional layers, and ReLu function is used as the activation function. Max pooling also applied to the layer outputs to improve model performance. The third and fourth layers are fully connected layers, and dropout has been applied to the output to reduce the model over fitting on the training data.
 
-4. The model was training with learning rate set to $0.001$, and batch size to $128$, and epochs $30$. Also, dropout rate are set to $0.5$ for training and $1.0$ for validation and testing.
+4. The model was training with learning rate set to 0.001, and batch size to 128, and epochs 30. Also, dropout rate are set to 0.5 for training and 1.0 for validation and testing.
 
-5. During the model training, various learning rate were first explored, and then different batch sizes were checked. Epochs was then increased to reuse the training set to fine tune the model. Upon checking the training accuracy and the validation accuracy, there was about $0.08$ to $0.1$ difference, which indicate a model over fitting. Then, dropout rate was introduced to reduce this issue. After checking various dropout rate, $0.5$ was selected, this can make the difference between training and validation accuracy down to around $0.03$.
+5. During the model training, various learning rate were first explored, and then different batch sizes were checked. Epochs was then increased to reuse the training set to fine tune the model. Upon checking the training accuracy and the validation accuracy, there was about 0.08 to 0.1 difference, which indicate a model over fitting. Then, dropout rate was introduced to reduce this issue. After checking various dropout rate, 0.5 was selected, this can make the difference between training and validation accuracy down to around 0.03.
 
 6. The final model achieved high accuracy on the validation and testing datasets as in below.
    ```log
@@ -59,7 +59,7 @@ _Binder serves interactive notebooks online, so you can run the code and change 
 1. Extra ten German traffic sign images were found from the internet, and all displayed for inspection.  
    <img src="./examples/web_sign.jpg" alt="new" width="600">  
 
-2. The trained model perform well on the new set of the test data, achieved $0.7$ accuracy rate. When more preprocessing steps are used, the model will be out perform than current benchmark.
+2. The trained model perform well on the new set of the test data, achieved 0.7 accuracy rate. When more preprocessing steps are used, the model will be out perform than current benchmark.
 
 3. A very interesting part for accuracy analysis is to look at how the CNN model think about the input image and how much confidence it has on the predictions.
    ```log
