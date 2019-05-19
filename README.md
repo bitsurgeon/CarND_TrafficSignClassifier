@@ -19,7 +19,7 @@ _Binder serves interactive notebooks online, so you can run the code and change 
 
 ### Dataset Exploration
 
-1. [German Traffic Sign Datasets](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset) is used to train and test the nerual network. There are 34799 sample images in the training set, and 12630 images in the testing set, which covers a total of $43$ different German traffic signs. For each of the example image, the dimension is 32x32x3.
+1. [German Traffic Sign Datasets](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset) is used to train and test the nerual network. There are 34799 sample images in the training set, and 12630 images in the testing set, which covers a total of 43 different German traffic signs. For each of the example image, the dimension is 32x32x3.
 
 2. An example image of each of the 43 traffic signs are displayed in below for visual inspection.  
    <img src="./examples/all_signs.jpg" alt="all" width="600">
