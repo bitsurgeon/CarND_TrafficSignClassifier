@@ -1,0 +1,23 @@
+name: carnd
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python
+  - autopep8
+  - ffmpeg
+  - imageio
+  - ipython
+  - jupyter
+  - matplotlib
+  - numpy
+  - opencv
+  - pandas
+  - pip
+  - pylint
+  - pytest
+  - scipy
+  - tensorflow-gpu
+  - scikit-learn
+  - pip:
+    - moviepy
