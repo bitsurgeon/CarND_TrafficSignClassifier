@@ -1,7 +1,6 @@
-# CarND_TrafficSignClassifier
-## _Traffic Sign Classifier :: Udacity - Self-Driving Car Engineer Nanodegree_
+# Traffic Sign Classifier
+## _A project of Self-Driving Car Engineer Nanodegree_
 
-[![Binder](http://mybinder.org/badge.svg)](https://beta.mybinder.org/v2/gh/bitsurgeon/CarND_TrafficSignClassifier/master)
 [![Udacity - Self-Driving Car Engineer Nanodegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)  
 
 ### The goals / steps of this project are the following:
@@ -11,9 +10,6 @@
 * Use the model to make predictions on new images
 * Analyze the softmax probabilities of the new images
 * Summarize the results with a written report
-
-#### _Binder_
-_Binder serves interactive notebooks online, so you can run the code and change the code within your browser without downloading the repository or installing Jupyter. Test drive online now by click the binder badge above._
 
 ---
 
